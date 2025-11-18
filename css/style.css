@@ -1,0 +1,16 @@
+@charset "utf-8";
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Hiragino kaku Gothic proN", "Hiragino Sana", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a{
+    text-decoration:  none;
+}
+img{
+    max-width: 100%;
+}
+
