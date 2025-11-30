@@ -1,32 +1,37 @@
-@charset "utf-8";
+@charset "UTF-8";
+/*共通部分*/
 html{
     font-size: 100%;
 }
 body{
-    font-family: "Hiragino kaku Gothic proN", "Hiragino Sana", "BIZ UDPGothic", sans-serif;
+    font-family: "Hiragino Kaku Goyhic ProN", "Hiragino Sans", "BIZ UDPGoyhic",sans-serif;
     line-height: 1.7;
     color: #432;
 }
 a{
-    text-decoration:  none;
+    text-decoration: none;
 }
 img{
     max-width: 100%;
 }
+/*レイアウト*/
 .wrapper{
     max-width: 1120px;
     margin: auto;
     padding: 0 1.5rem;
 }
-.align-conter {
+.align-center{
     text-align: center;
 }
-.font-englist{
-    font-family: 'philosopher' , sans-serif;
+
+/*見出し*/
+.font-english{
+    font-family: 'philosopher',sans-serif;
     font-weight: normal;
 }
 
-.page-title{
+.page-title,
+.heading-large{
     font-size: 3rem;
     text-align: center;
 }
@@ -36,37 +41,40 @@ img{
 
 }
 .heading-large{
+    font-size:3rem;
+    text-align: center;
     margin-bottom: 1rem;
 }
+.cover{
+    background-size: cover;
+    background-position: center bottom;
+    height: 800px;
+}
+.cover-home{
+    background-image: url(../images/cover-home-s.webp);
+}
 
+/*ボタン*/
 .btn{
-    display:  inline-block;
+    display: inline-block;
     font-size: 1.5rem;
     background-color: #0bd;
     color: #fff;
     border-radius: 8px;
-    padding: .75rem 1.5rem;
+    padding: .7.5rem 1.5rem;
     transition: .5s;
 }
-.btn{
-    translate: 10px;
-}
-.btn{
-    rotate: -5deg;
-}
+
 .btn:hover{
-    scale: 1.2;
+    scale: 1.2 1.5;
 }
 .btn:hover{
     background-color: #0090aa;
 }
 
-.align-conter{
-    text-align: center;
-}
-
+/*ヘッダー*/
 .page-header{
-    padding-top: .5rem;
+    padding-top: 5rem;
 }
 .logo{
     width: 210px;
@@ -97,33 +105,21 @@ img{
 .about{
     max-width: 736px;
     padding: 0 1.5rem;
-    margin: 3rem auto 0;
+    margin:3rem auto 0;
 }
-.about p {
+.about p{
     margin-bottom: 3rem;
 }
-.page-title,
-.heading-large {
-    font-size: 3rem;
-    text-align: center;
-}
-.page-title{
-    margin-top: 2rem;
-    line-height: 1.4;
-}
-.heading-large{
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
+
+/*フッター*/
 .page-footer{
-    background-image: url(../images/footer-s.webp);
+    background-image: url(../images/cover-home-s.webp);
     background-size: cover;
     background-position: center;
     padding-top: 12rem;
 }
 .info{
-    width: 100;
+    width: 100%;
     max-width: 544px;
     margin: auto;
     padding: 0 1.5rem;
@@ -131,9 +127,9 @@ img{
 }
 .info th,
 .info td{
-    border-bottom: 1px solid #c9c2c9;
+    border-bottom: 1px solid #c9c2bc;
 }
-.info td{
+.info th{
     text-align: left;
     font-weight: normal;
     padding: 1rem;
@@ -148,14 +144,17 @@ img{
     margin-top: 6rem;
     color: #fff;
 }
+/*デスクトップ版*/
 @media (min-width: 800px){
-    .page-title{
+    /*見出し*/
+    .apge-title{
         font-size: 5rem;
     }
     .heading-large{
         font-size: 4rem;
     }
 
+    /*ヘッダー*/
     .page-header{
         display: flex;
         justify-content: space-between;
@@ -164,7 +163,9 @@ img{
     .main-nav{
         font-size: 2rem;
     }
+ 
 
+    /*HOME*/
     .cover-home{
         background-image: url(../images/cover-home-l.webp);
     }
@@ -172,11 +173,12 @@ img{
         margin: 4rem auto 0;
     }
 
+    /*フッター*/
     .page-footer{
-        background-image: url(../images/cover-home-l.webp);
+        background-image: url(../images/footer-l.webp);
         padding-top: 12rem;
     }
-    .into th{
+    .info th{
         padding-left: 2.5rem;
     }
 }
