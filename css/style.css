@@ -45,11 +45,19 @@ img{
     text-align: center;
     margin-bottom: 1rem;
 }
+/*ヘッダーカバー画像*/
 .cover{
     background-size: cover;
     background-position: center bottom;
     height: 800px;
 }
+.sub-cover{
+    background-image: cover;
+    background-position: center bottom;
+    height: 528px;
+    margin-bottom: 4rem;
+}
+
 .cover-home{
     background-image: url(../images/cover-home-s.webp);
 }
@@ -109,6 +117,10 @@ img{
 }
 .about p{
     margin-bottom: 3rem;
+}
+/*NEWS*/
+.cover-news{
+    background-image: url(../images/cover-news-s.webp);
 }
 
 /*フッター*/
